@@ -6,7 +6,7 @@ const port = process.env.PORT || 5000
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
-
+app.get('/getRate', (req, res) => res.render('pages/getRate'))
 
 // start the server listening
 app.listen(port, function() {
