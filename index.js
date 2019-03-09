@@ -99,7 +99,7 @@ function computeRate(weight, type){
 
   const params = {weight: weight, type: type, result: result};
 
-  Response.render('pages/getRate', params)
+  res.render('pages/getRate', params)
 
 }
 
