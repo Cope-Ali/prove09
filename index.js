@@ -15,7 +15,7 @@ app.listen(port, function() {
 
 function calculateRate(req, res){
   const weight = Number(req.query.weight);
-  const type = request.query.mail;
+  const type = req.query.mail;
 
   computeRate(weight, type);
 }
