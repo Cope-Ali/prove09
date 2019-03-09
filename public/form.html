@@ -14,13 +14,13 @@
     <h1>Postage Calculator</h1>
     </div>
     <div>
-<form>
-
+<form method="get" action="/node-js-getting-started/views/pages/getRate.ejs" >
     <input type="number" name="weight"> Weight <br>
     <input type="radio" name="mail" value="stamped"> Letters (Stamped) <br>
     <input type="radio" name="mail" value="metered"> Letters (Metered) <br>
     <input type="radio" name="mail" value="flats"> Large Envelopes (Flats) <br>
     <input type="radio" name="mail" value="package"> First-Calss Package Service - Retail <br>
+    <input type="submit" value="Get Rate">
 </form>
 
     </div>
