@@ -17,11 +17,11 @@ function calculateRate(req, res){
   const weight = Number(req.query.weight);
   const type = req.query.mail;
 
-  computeRate(weight, type);
+  computeRate(res, weight, type);
 }
 
 
-function computeRate(weight, type){
+function computeRate(res, weight, type){
   if (type == "stamped"){
     console.log ("stamped");
     if (weight < 1)
